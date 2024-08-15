@@ -15,7 +15,7 @@
       "title": " Component composition",
       "description": "This pattern involves building user interfaces, creating reusable and smaller components, and composing them to form a complete UI.",
       "tags": ["javascript", "intermediate", "react"],
-      "keywords": ["tip", "javascript", "react", "intermediate"],
+      "keywords": ["tip", "javascript", "react", "intermediate", "reactJs"],
       "language": "react",
       "creator": "bane",
       "postedAt": "2023-11-22T10:35:24Z"
@@ -25,7 +25,7 @@
       "title": "Spread and Rest Operators",
       "description": "The spread (`...`) and rest (`...`) operators are like magic wands for working with groups of things. They make copying, mixing, and taking things out easier.",
       "tags": ["javascript", "beginner"],
-      "keywords": ["tip", "javascript", "beginner"],
+      "keywords": ["tip", "javascript", "beginner", "vanillaJs"],
       "language": "javascript",
       "creator": "tony stark",
       "postedAt": "2023-11-22T10:35:24Z"
@@ -35,7 +35,7 @@
       "title": "Redux for state management",
       "description": "Redux is a popular library for managing app state. It follows a unidirectional data flow and simplifies complex data interactions.",
       "tags": ["javascript", "intermediate", "react"],
-      "keywords": ["tip", "javascript", "react", "intermediate"],
+      "keywords": ["tip", "javascript", "react", "intermediate", "reactJs"],
       "language": "react",
       "creator": "tyler durden",
       "postedAt": "2023-11-22T10:35:24Z"
@@ -57,7 +57,7 @@
       "title": "Promises and Async/Await",
       "description": "Promises and async/await make it easier to do tricky things in your code that happen at different times. They're like a friendly helper for hard work.",
       "tags": ["javascript", "advanced"],
-      "keywords": ["tip", "javascript", "advanced"],
+      "keywords": ["tip", "javascript", "advanced", "vanillaJs"],
       "language": "javascript",
       "creator": "thanos",
       "postedAt": "2023-11-22T10:35:24Z"
@@ -67,7 +67,7 @@
       "title": "Container and Presentational Components (Smart and Dumb Components)",
       "description": "Promises and async/await make it easier to do tricky things in your code that happen at different times. They're like a friendly helper for hard work.",
       "tags": ["javascript", "beginner", "react"],
-      "keywords": ["tip", "javascript", "react", "beginner"],
+      "keywords": ["tip", "javascript", "react", "beginner", "reactJs"],
       "language": "react",
       "creator": "dr.doom",
       "postedAt": "2023-11-22T10:35:24Z"
@@ -77,7 +77,7 @@
       "title": "Use const and let Instead of `var",
       "description": " JavaScript has some new words like const and let for making things in your code. They're better than the old word var because they work more safely.",
       "tags": ["javascript", "beginner"],
-      "keywords": ["tip", "javascript", "beginner"],
+      "keywords": ["tip", "javascript", "beginner", "vanillaJs"],
       "language": "javascript",
       "creator": "bruce wayne",
       "postedAt": "2023-11-22T10:35:24Z"

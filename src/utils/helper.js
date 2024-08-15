@@ -6,3 +6,8 @@ export function formatDate(date){
         minute : "2-digit"
     }).format(date);
 }
+
+
+export function filterItems(items,key,value){
+    return items.filter(item => item[key] === value)
+}
