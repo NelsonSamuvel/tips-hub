@@ -14,11 +14,12 @@ const SearchBarTips = ({ searchedTip, dispatch, searchBy }) => {
       />
       <div className="absolute top-0 right-0">
         <select
+
           value={searchBy}
           onChange={(e) =>
             dispatch({ type: "setSearchBy", payload: e.target.value })
           }
-          className="text-slate-200 bg-slate-700 border-none px-2 py-1  md:px-2.5 md:py-2 focus:outline-none"
+          className="rounded-sm text-slate-200 bg-slate-700 border-none px-2 py-1  md:px-2.5 md:py-2 focus:outline-none"
         >
           <option value="any">Any</option>
           <option value="tags">Tags</option>
