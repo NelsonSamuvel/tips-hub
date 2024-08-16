@@ -5,7 +5,7 @@ const DropDownTips = ({ language, dispatch }) => {
     <>
       <select
         name="languages"
-        className="rounded-sm px-2 py-1 md:px-3 md:py-2  focus:outline-none"
+        className="appearance-none rounded-sm px-2 py-1 pr-8 md:px-3 md:py-2 md:pr-10  focus:outline-none bg-custom-arrow-2 bg-no-repeat bg-right bg-custom-size"
         value={language}
         onChange={(e) =>
           dispatch({ type: "setLanguage", payload: e.target.value })
