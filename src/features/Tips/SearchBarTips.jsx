@@ -6,7 +6,7 @@ const SearchBarTips = ({ searchedTip, dispatch, searchBy }) => {
       <input
         className="px-2 py-1 md:px-3 md:py-2 w-[300px] rounded-sm focus:outline-none placeholder:font-normal sm:w-[350px] focus:md:w-[450px] focus:transition-w duration-100"
         type="text"
-        placeholder="search tips here..."
+        placeholder={`search tips by ${searchBy}`}
         value={searchedTip}
         onChange={(e) =>
           dispatch({ type: "setSearchedTip", payload: e.target.value })
@@ -19,9 +19,9 @@ const SearchBarTips = ({ searchedTip, dispatch, searchBy }) => {
           onChange={(e) =>
             dispatch({ type: "setSearchBy", payload: e.target.value })
           }
-          className=" text-slate-200 bg-slate-700  px-2 py-1 border-none md:px-2.5 md:py-2 focus:outline-none"
+          className="text-center appearance-none text-slate-200 bg-slate-700  px-2 py-1 border-none md:px-2.5 md:py-2 focus:outline-none focus:shadow-md"
         >
-          <option value="any">Any</option>
+          <option value="any" className="">Any</option>
           <option value="tags">Tags</option>
           <option value="creator">Creators</option>
         </select>
