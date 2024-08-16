@@ -179,7 +179,7 @@ function TipsLayout() {
       <div className="relative">
         {status === "loading" && <Loader />}
         {!filteredTips.length ? (
-          <TipsNotFound />
+          <TipsNotFound searchBy={searchBy} />
         ) : (
           <TipsList tips={filteredTips} />
         )}

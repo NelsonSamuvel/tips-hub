@@ -24,7 +24,7 @@ const SearchBarTips = ({ searchedTip, dispatch, searchBy }) => {
             Any
           </option>
           <option value="tags">Tags</option>
-          <option value="creator">Creators</option>
+          <option value="creators">Creators</option>
         </select>
       </div>
     </div>
