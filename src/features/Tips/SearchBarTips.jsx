@@ -1,5 +1,5 @@
 import React from "react";
-
+import { HiArrowSmDown } from "react-icons/hi";
 const SearchBarTips = ({ searchedTip, dispatch, searchBy }) => {
   return (
     <div className="relative">
@@ -14,14 +14,15 @@ const SearchBarTips = ({ searchedTip, dispatch, searchBy }) => {
       />
       <div className="absolute top-0 right-0">
         <select
-
           value={searchBy}
           onChange={(e) =>
             dispatch({ type: "setSearchBy", payload: e.target.value })
           }
-          className="text-center appearance-none text-slate-200 bg-slate-700  px-2 py-1 border-none md:px-2.5 md:py-2 focus:outline-none focus:shadow-md"
+          className=" text-slate-200 bg-slate-700  px-2 py-1 border-none md:px-2.5 md:py-2 focus:outline-none focus:shadow-md"
         >
-          <option value="any" className="">Any</option>
+          <option value="any" className="">
+            Any
+          </option>
           <option value="tags">Tags</option>
           <option value="creator">Creators</option>
         </select>
