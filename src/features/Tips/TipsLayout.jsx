@@ -142,7 +142,7 @@ function TipsLayout() {
   if (isSearchTip) {
     let checkString;
     if (searchBy === "tags" || searchBy === "creator") {
-      filteredTips = filteredTips.filter((tip) => {
+      filteredTips = filteredTips.filter((tip) => { 
         checkString = tip[searchBy].toString();
         return checkString.toLowerCase().includes(searchedTip.toLowerCase());
       });
