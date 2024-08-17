@@ -5,26 +5,27 @@
       "title": "Use the Enhanced For Loop",
       "description": "The enhanced for loop, introduced in Java 5, provides a concise and efficient way to iterate over arrays and collections. Instead of using traditional for loops with index variables, you can simply iterate over the elements directly. This improves code readability and reduces the chance of off-by-one errors.",
       "tags": ["java", "beginner"],
-      "keywords": ["tip", "java", "beginner"],
+      "keywords": ["tip", "java", "beginner", "tipsandtricks"],
       "language": "java",
       "creator": "John Doe",
       "postedAt": "2023-11-22T10:35:24Z"
     },
+   
     {
       "id": 2,
-      "title": " Component composition",
-      "description": "This pattern involves building user interfaces, creating reusable and smaller components, and composing them to form a complete UI.",
-      "tags": ["javascript", "intermediate", "react"],
-      "keywords": ["tip", "javascript", "react", "intermediate", "reactJs"],
-      "language": "react",
-      "creator": "bane",
+      "title": "Use List Comprehensions for Faster Iteration",
+      "description": "List comprehensions are a powerful Python feature that allows you to create lists in a concise and efficient way. Instead of using a for loop to iterate over a list, you can use a list comprehension to achieve the same result in just one line of code.",
+      "tags": ["python", "beginner", "py", "coding"],
+      "keywords": ["tip", "python"],
+      "language": "python",
+      "creator": "kratos",
       "postedAt": "2023-11-22T10:35:24Z"
     },
     {
       "id": 3,
       "title": "Spread and Rest Operators",
       "description": "The spread (`...`) and rest (`...`) operators are like magic wands for working with groups of things. They make copying, mixing, and taking things out easier.",
-      "tags": ["javascript", "beginner"],
+      "tags": ["javascript", "beginner", "js"],
       "keywords": ["tip", "javascript", "beginner", "vanillaJs"],
       "language": "javascript",
       "creator": "tony stark",
@@ -34,7 +35,7 @@
       "id": 4,
       "title": "Redux for state management",
       "description": "Redux is a popular library for managing app state. It follows a unidirectional data flow and simplifies complex data interactions.",
-      "tags": ["javascript", "intermediate", "react"],
+      "tags": ["javascript", "intermediate", "react", "js"],
       "keywords": ["tip", "javascript", "react", "intermediate", "reactJs"],
       "language": "react",
       "creator": "tyler durden",
@@ -43,20 +44,20 @@
 
     {
       "id": 5,
-      "title": "Use StringBuilder for String Manipulation",
-      "description": "When you need to concatenate multiple strings or perform frequent string modifications, using the StringBuilder class is more efficient than using the '+' operator or concatenation methods. StringBuilder is mutable and provides methods for efficient string manipulation.",
-      "tags": ["java", "advanced"],
-      "keywords": ["tip", "java", "advanced"],
-      "language": "java",
-      "creator": "steve",
-      "postedAt": "2024-07-25T10:35:24Z"
+      "title": "Take Advantage of Python's Built-In Functions",
+      "description": "Python has many built-in functions that can save you time and effort when coding. Functions like map(), filter(), and reduce() can help you perform common operations on lists, dictionaries, and other data structures with just a few lines of code.",
+      "tags": ["python", "intermediate", "py"],
+      "keywords": ["tip", "python"],
+      "language": "python",
+      "creator": "kai",
+      "postedAt": "2023-11-22T10:35:24Z"
     },
 
     {
       "id": 6,
       "title": "Promises and Async/Await",
       "description": "Promises and async/await make it easier to do tricky things in your code that happen at different times. They're like a friendly helper for hard work.",
-      "tags": ["javascript", "advanced"],
+      "tags": ["javascript", "advanced", "js"],
       "keywords": ["tip", "javascript", "advanced", "vanillaJs"],
       "language": "javascript",
       "creator": "thanos",
@@ -66,7 +67,7 @@
       "id": 7,
       "title": "Container and Presentational Components (Smart and Dumb Components)",
       "description": "Promises and async/await make it easier to do tricky things in your code that happen at different times. They're like a friendly helper for hard work.",
-      "tags": ["javascript", "beginner", "react"],
+      "tags": ["javascript", "beginner", "react", "js"],
       "keywords": ["tip", "javascript", "react", "beginner", "reactJs"],
       "language": "react",
       "creator": "dr.doom",
@@ -76,7 +77,7 @@
       "id": 8,
       "title": "Use const and let Instead of `var",
       "description": " JavaScript has some new words like const and let for making things in your code. They're better than the old word var because they work more safely.",
-      "tags": ["javascript", "beginner"],
+      "tags": ["javascript", "beginner", "js"],
       "keywords": ["tip", "javascript", "beginner", "vanillaJs"],
       "language": "javascript",
       "creator": "bruce wayne",
@@ -90,6 +91,36 @@
       "keywords": ["tip", "java", "intermediate"],
       "language": "java",
       "creator": "John wick",
+      "postedAt": "2023-11-22T10:35:24Z"
+    },
+    {
+      "id": 10,
+      "title": " Component composition",
+      "description": "This pattern involves building user interfaces, creating reusable and smaller components, and composing them to form a complete UI.",
+      "tags": ["javascript", "intermediate", "react", "js"],
+      "keywords": ["tip", "javascript", "react", "intermediate", "reactJs"],
+      "language": "react",
+      "creator": "bane",
+      "postedAt": "2023-11-22T10:35:24Z"
+    },
+    {
+      "id": 11,
+      "title": "Use StringBuilder for String Manipulation",
+      "description": "When you need to concatenate multiple strings or perform frequent string modifications, using the StringBuilder class is more efficient than using the '+' operator or concatenation methods. StringBuilder is mutable and provides methods for efficient string manipulation.",
+      "tags": ["java", "advanced"],
+      "keywords": ["tip", "java", "advanced"],
+      "language": "java",
+      "creator": "steve",
+      "postedAt": "2024-07-25T10:35:24Z"
+    },
+    {
+      "id": 12,
+      "title": "Unpacking",
+      "description": "Unpacking in python enables you to take individual elements out of iterables, such lists or tuples, and put them into variables. When you have data sets and wish to access their individual components independently, you frequently use it..",
+      "tags": ["python", "advanced", "py", "programming","coding"],
+      "keywords": ["tip", "python"],
+      "language": "python",
+      "creator": "flash",
       "postedAt": "2023-11-22T10:35:24Z"
     }
   ]

@@ -13,6 +13,7 @@ const DropDownTips = ({ language, dispatch }) => {
       >
         <option value="all">All</option>
         <option value="java">Java</option>
+        <option value="python">Python</option>
         <option value="javascript">Javascript</option>
         <option value="react">React</option>
       </select>
