@@ -3,11 +3,14 @@ import TagsList from "./TagsList";
 import { formatDate } from "../../utils/helper";
 
 const TipsItem = ({ tip }) => {
-  const { title, description, language, tags, creator, postedAt } = tip;
+  const { title, description, language, tags, creator, postedAt, image } = tip;
 
   return (
     <li className="space-y-3 bg-slate-950 px-3 py-4 rounded-md  flex flex-col justify-between">
       <p className="text-xl font-semibold">{title}</p>
+      <div className="">
+        <img src={image} alt="" className="w-full md:h-56"/>
+      </div>
       <div className="">
         <p className="sm:text-sm tracking-wide">{description}</p>
       </div>
@@ -22,11 +25,9 @@ const TipsItem = ({ tip }) => {
           ))}
         </ul>
       </div>
-        <div className="bg-sky-950 p-2 rounded-sm ml-auto">
-          <p className="cursor-pointer text-center ">
-            {language}
-          </p>
-        </div>
+      <div className="bg-sky-950 p-2 rounded-sm ml-auto">
+        <p className="cursor-pointer text-center ">{language}</p>
+      </div>
     </li>
   );
 };
