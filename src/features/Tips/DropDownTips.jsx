@@ -1,6 +1,9 @@
 import React from "react";
+import { useTips } from "../../context/TipsContextProvider";
 
-const DropDownTips = ({ language, dispatch }) => {
+const DropDownTips = () => {
+  const { language, dispatch } = useTips();
+
   return (
     <>
       <select

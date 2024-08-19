@@ -1,6 +1,8 @@
 import React from "react";
 import { HiArrowSmDown } from "react-icons/hi";
-const SearchBarTips = ({ searchedTip, dispatch, searchBy }) => {
+import { useTips } from "../../context/TipsContextProvider";
+const SearchBarTips = () => {
+  const { searchedTip, dispatch, searchBy } = useTips();
   return (
     <div className="relative">
       <input
