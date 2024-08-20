@@ -7,6 +7,10 @@ export function formatDate(date) {
   }).format(date);
 }
 
+export function generateDate(){
+  return new Date().toISOString().split('.')[0] + 'Z';
+}
+
 export function filterItems(items, key, value) {
   return items.filter((item) => item[key] === value);
 }
@@ -23,7 +27,7 @@ export function searchFilterTip(filteredTips,searchedTip, searchBy) {
         const { title, description, tags, keywords, language, creator } = tip;
         checkString = `${title} ${description} ${language} ${tags.join(
           " "
-        )} ${keywords.join(" ")}  ${creator}`;
+        )} ${keywords?.join(" ")}  ${creator}`;
         return checkString.toLowerCase().includes(searchedTip.toLowerCase());
       });
     }

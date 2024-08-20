@@ -161,6 +161,8 @@ function reducer(state, action) {
       return { ...state, searchedTip: action.payload };
     case "setSearchBy":
       return { ...state, searchBy: action.payload };
+    case "addNewTip":
+      return {...state,tips:[action.payload,...state.tips]}
     default:
       return state;
   }

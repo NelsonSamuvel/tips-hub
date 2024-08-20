@@ -1,6 +1,11 @@
+const DropDown = ({ children, className, value, onChange, register, name }) => {
+  if (register)
+    return (
+      <select className={className} {...register(name)}>
+        {children}
+      </select>
+    );
 
-
-const DropDown = ({ children, className, value, onChange }) => {
   return (
     <select className={className} value={value} onChange={onChange}>
       {children}

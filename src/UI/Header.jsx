@@ -9,7 +9,7 @@ function Header({ onShow }) {
       <div className="text-sm sm:text-lg italic tracking-wider hidden sm:block">
         <p>Learn to Code Better</p>
       </div>
-      <div className="flex gap-4 items-center">
+      <div className="flex gap-4 items-center text-lg">
         <p className="text-base">Tips</p>
         <Button onClick={onShow} type="primary">
           Create
