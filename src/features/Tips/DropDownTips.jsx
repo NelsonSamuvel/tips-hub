@@ -1,5 +1,5 @@
 import { useTips } from "../../context/TipsContextProvider";
-import DropDown from "../../ui/Dropdown";
+import DropDown from "../../UI/Dropdown";
 
 const DropDownTips = () => {
   const { language, dispatch } = useTips();

@@ -2,7 +2,7 @@ import React, { useEffect, useReducer, useState } from "react";
 import FilterBox from "./FilterBox";
 import TipsList from "./TipsList";
 import { getTips } from "../../services/api.tips";
-import Loader from "../../ui/Loader";
+import Loader from "../../UI/Loader";
 import { filterItems } from "../../utils/helper";
 import SearchBarTips from "./SearchBarTips";
 import DropDownTips from "./DropDownTips";

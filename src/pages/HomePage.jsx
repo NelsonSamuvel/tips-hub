@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Header from "../ui/Header";
-import Footer from "../ui/Footer";
+import Header from "../UI/Header";
+import Footer from "../UI/Footer";
 import TipsLayout from "../features/Tips/TipsLayout";
 import FilterBox from "../features/Tips/FilterBox";
 import TipsContextProvider from "../context/TipsContextProvider";
@@ -12,7 +12,6 @@ function HomePage() {
   function handleClose() {
     setShowModal((show) => !show);
   }
-  
 
   return (
     <TipsContextProvider>
