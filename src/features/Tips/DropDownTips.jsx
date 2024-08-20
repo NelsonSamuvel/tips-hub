@@ -14,11 +14,11 @@ const DropDownTips = () => {
           dispatch({ type: "setLanguage", payload: e.target.value })
         }
       >
-        <option value="all">All</option>
-        <option value="java">Java</option>
-        <option value="python">Python</option>
-        <option value="javascript">Javascript</option>
-        <option value="react">React</option>
+        <DropDown.Option value="all">All</DropDown.Option>
+        <DropDown.Option value="java">Java</DropDown.Option>
+        <DropDown.Option value="python">Python</DropDown.Option>
+        <DropDown.Option value="javascript">Javascript</DropDown.Option>
+        <DropDown.Option value="react">React</DropDown.Option>
       </DropDown>
     </>
   );

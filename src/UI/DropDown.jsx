@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import React from "react";
 
 const DropDown = ({ children, className, value, onChange }) => {
@@ -7,5 +9,11 @@ const DropDown = ({ children, className, value, onChange }) => {
     </select>
   );
 };
+
+function Option({ children, value }) {
+  return <option value={value}>{children}</option>;
+}
+
+DropDown.Option = Option;
 
 export default DropDown;

@@ -12,11 +12,11 @@ const SearchBarDropdown = () => {
         }
         className="appearance-none bg-custom-arrow-1 bg-no-repeat bg-right bg-custom-size text-slate-200  bg-slate-700  px-2 py-1 pr-8 border-none md:px-2.5 md:py-2 md:pr-10 focus:outline-none focus:shadow-md"
       >
-        <option value="any" className="">
+        <DropDown.Option value="any" className="">
           Any
-        </option>
-        <option value="tags">Tags</option>
-        <option value="creator">Creators</option>
+        </DropDown.Option>
+        <DropDown.Option value="tags">Tags</DropDown.Option>
+        <DropDown.Option value="creator">Creators</DropDown.Option>
       </DropDown>
     </div>
   );
