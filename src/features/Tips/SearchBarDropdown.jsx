@@ -1,4 +1,4 @@
-import DropDown from "../../UI/Dropdown";
+import DropDown from "../../UI/DropDown";
 import { useTips } from "../../context/TipsContextProvider";
 
 const SearchBarDropdown = () => {
