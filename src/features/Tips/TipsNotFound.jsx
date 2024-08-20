@@ -1,4 +1,4 @@
-import React from "react";
+
 
 const TipsNotFound = ({searchBy}) => {
   const isOther = searchBy==="tags" || searchBy === "creator"

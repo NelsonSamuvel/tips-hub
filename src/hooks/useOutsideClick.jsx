@@ -13,7 +13,7 @@ export function useOutsideClick(close, eventPhase = true) {
 
     document.addEventListener("click", handleClick, eventPhase);
     return () => document.removeEventListener("click", handleClick, eventPhase);
-  }, []);
+  }, [close,eventPhase]);
 
   return ref;
 }

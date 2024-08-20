@@ -1,4 +1,3 @@
-import React from "react";
 
 function Button({ onClick, children, type = "primary" }) {
   const base = "px-2 py-1 rounded-sm text-slate-300";
