@@ -12,6 +12,7 @@ function HomePage() {
   function handleClose() {
     setShowModal((show) => !show);
   }
+  
 
   return (
     <TipsContextProvider>
