@@ -1,7 +1,7 @@
 import { useOutsideClick } from "../../hooks/useOutsideClick";
-import Button from "../../UI/Button";
+import Button from "../../ui/Button";
 import DropDown from "../../ui/Dropdown";
-import FormRow from "../../UI/FormRow";
+import FormRow from "../../ui/FormRow";
 import { HiMiniXMark, HiXMark } from "react-icons/hi2";
 
 function AddTipsModal({ onClose }) {
@@ -55,7 +55,7 @@ function AddTipsModal({ onClose }) {
           />
         </FormRow>
         <div className="">
-        <Button>Add New Tip</Button>
+          <Button>Add New Tip</Button>
         </div>
       </form>
     </div>
