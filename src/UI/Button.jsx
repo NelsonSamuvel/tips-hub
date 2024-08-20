@@ -4,7 +4,7 @@ function Button({ onClick, children, type = "primary" }) {
   const base = "px-2 py-1 rounded-sm text-slate-300";
 
   const btnStyles = {
-    primary: `${base} bg-sky-700 tracking-wide`,
+    primary: `${base} bg-sky-950 tracking-wide`,
   };
 
   return (

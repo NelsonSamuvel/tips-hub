@@ -7,7 +7,7 @@ function Header({ onShow }) {
       <div className="text-lg sm:text-xl font-semibold tracking-widest">
         <p>TipsHub</p>
       </div>
-      <div className="text-sm sm:text-lg italic tracking-wider ">
+      <div className="text-sm sm:text-lg italic tracking-wider hidden sm:block">
         <p>Learn to Code Better</p>
       </div>
       <div className="flex gap-4 items-center">

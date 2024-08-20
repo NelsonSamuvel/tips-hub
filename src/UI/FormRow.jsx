@@ -2,8 +2,8 @@
 
 function FormRow({children,label}) {
   return (
-    <div className="flex items-center gap-2 mb-4">
-        <label htmlFor={children.props.id} className="basis-1/4 text-lg text-slate-800">{label}</label>
+    <div className="flex flex-col lg:flex-row lg:items-center gap-2 mb-6">
+        <label htmlFor={children.props.id} className="basis-1/4 md:text-lg text-slate-200 font-semibold">{label}</label>
         {children}
     </div>
   )
