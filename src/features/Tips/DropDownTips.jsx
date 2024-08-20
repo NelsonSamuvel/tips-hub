@@ -1,12 +1,12 @@
-import React from "react";
 import { useTips } from "../../context/TipsContextProvider";
+import DropDown from "../../ui/Dropdown";
 
 const DropDownTips = () => {
   const { language, dispatch } = useTips();
 
   return (
     <>
-      <select
+      <DropDown
         name="languages"
         className="appearance-none rounded-sm px-2 py-1 pr-8 md:px-3 md:py-2 md:pr-10  focus:outline-none bg-custom-arrow-2 bg-no-repeat bg-right bg-custom-size"
         value={language}
@@ -19,7 +19,7 @@ const DropDownTips = () => {
         <option value="python">Python</option>
         <option value="javascript">Javascript</option>
         <option value="react">React</option>
-      </select>
+      </DropDown>
     </>
   );
 };
