@@ -1,7 +1,8 @@
-import { useTips } from "../../context/TipsContextProvider";
+import { useSearchFilter } from "../../context/SearchContextProvider";
 
 const SearchInput = () => {
-  const { searchedTip, dispatch, searchBy } = useTips();
+  const { searchedTip, handleSearch,searchBy } = useSearchFilter();
+
 
   return (
     <input
@@ -9,9 +10,7 @@ const SearchInput = () => {
       type="text"
       placeholder={`search tips by ${searchBy}`}
       value={searchedTip}
-      onChange={(e) =>
-        dispatch({ type: "setSearchedTip", payload: e.target.value })
-      }
+      onChange={handleSearch}
     />
   );
 };

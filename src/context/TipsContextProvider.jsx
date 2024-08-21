@@ -167,7 +167,6 @@ const initialTips = [
 const initialState = {
   tips: initialTips,
   status: "idle",
-  searchedTip: "",
   searchBy: "any",
 };
 
@@ -177,8 +176,6 @@ function reducer(state, action) {
       return { ...state, status: "loading" };
     case "getTips":
       return { ...state, tips: action.payload, status: "idle" };
-    case "setSearchedTip":
-      return { ...state, searchedTip: action.payload };
     case "setSearchBy":
       return { ...state, searchBy: action.payload };
     case "addNewTip":
@@ -191,7 +188,7 @@ function reducer(state, action) {
 }
 
 const TipsContextProvider = ({ children }) => {
-  const [{ tips, status, searchedTip, searchBy }, dispatch] = useReducer(
+  const [{ tips, status, searchBy }, dispatch] = useReducer(
     reducer,
     initialState
   );
@@ -201,7 +198,6 @@ const TipsContextProvider = ({ children }) => {
       value={{
         tips,
         status,
-        searchedTip,
         searchBy,
         dispatch,
       }}

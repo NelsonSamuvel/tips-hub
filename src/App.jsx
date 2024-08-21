@@ -9,6 +9,7 @@ import {
 import HomePage from "./pages/HomePage";
 import TipsContextProvider from "./context/TipsContextProvider";
 import AppLayout from "./UI/AppLayout";
+import PageNotFound from "./UI/PageNotFound";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/tips",
         element: <HomePage />,
+      },
+      {
+        path: "*",
+        element: <PageNotFound />,
       },
     ],
   },

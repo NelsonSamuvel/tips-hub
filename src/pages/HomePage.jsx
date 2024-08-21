@@ -5,18 +5,17 @@ import TipsLayout from "../features/Tips/TipsLayout";
 import FilterBox from "../features/Tips/FilterBox";
 import TipsContextProvider, { useTips } from "../context/TipsContextProvider";
 import AddTipsModal from "../features/Tips/AddTipsModal";
+import SearchContextProvider from "../context/SearchContextProvider";
 
 function HomePage() {
-
-  
-
   return (
-
-        <div className="relative">
-          <FilterBox />
-          <AddTipsModal/>
-          <TipsLayout />
-        </div>
+    <SearchContextProvider>
+      <div className="relative">
+        <FilterBox />
+        <AddTipsModal />
+        <TipsLayout />
+      </div>
+    </SearchContextProvider>
   );
 }
 

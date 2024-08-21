@@ -4,9 +4,13 @@ import TipsNotFound from "./TipsNotFound";
 import { useTips } from "../../context/TipsContextProvider";
 import { useSearchParams } from "react-router-dom";
 import TipsItem from "./TipsItem";
+import { useSearchFilter } from "../../context/SearchContextProvider";
 
 function TipsLayout() {
-  const { searchedTip, searchBy, tips, status } = useTips();
+  const { tips, status } = useTips();
+  const { searchBy } = useSearchFilter();
+
+  const { searchedTip } = useSearchFilter();
 
   const [searchParams] = useSearchParams();
   const language = searchParams.get("lang") || "all";

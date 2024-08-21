@@ -1,10 +1,10 @@
 import SearchBarTips from "./SearchBarTips";
 import Filter from "../../UI/Filter";
 
-function FilterBox() {
+function FilterBox({ searchedTip }) {
   return (
     <div className="flex items-center flex-col md:flex-row flex-wrap justify-center gap-6 sm:gap-8 bg-slate-800 h-[170px] text-stone-600 px-4">
-      <SearchBarTips />
+      <SearchBarTips searchedTip={searchedTip} />
       <Filter
         options={[
           { value: "all", label: "All" },
