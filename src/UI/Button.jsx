@@ -5,7 +5,7 @@ function Button({ onClick, children, type = "primary", isActive = false }) {
 
   const btnStyles = {
     primary: `${base} bg-sky-950 tracking-wide`,
-    secondary: `${base} bg-transparent border hover:bg-white hover:text-slate-800 ${
+    secondary: `${base} bg-transparent border hover:bg-white hover:text-slate-800  ${
       isActive && "bg-white text-slate-800"
     }`,
   };

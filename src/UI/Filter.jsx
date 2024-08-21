@@ -13,7 +13,7 @@ function Filter({ options }) {
   }
 
   return (
-    <div className="flex gap-4 mt-4 sm:mt-0">
+    <div className="flex gap-2 mt-4 sm:mt-0">
       {options.map((option) => (
         <Button
           type="secondary"

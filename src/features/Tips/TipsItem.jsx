@@ -23,13 +23,13 @@ const TipsItem = ({ tip }) => {
           <div className="mt-4">
             <p className="sm:text-sm tracking-wide">{description}</p>
             <div className="text-sm mt-2 text-slate-400 flex sm:justify-between items-center flex-wrap gap-4 sm:gap-2">
-              <p>Creator-@{creator}</p>
+              <p>Creator-{creator}</p>
               <p>{formatDate(new Date(postedAt))}</p>
             </div>
           </div>
         </div>
 
-        <div className="flex  items-center justify-between">
+        <div className="flex  items-center justify-between mt-4">
           <ul className="flex space-x-2 text-sky-700 flex-wrap">
             {tags.map((tag, i) => (
               <TagsList key={i} tag={tag} />
