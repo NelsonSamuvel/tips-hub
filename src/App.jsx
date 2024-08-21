@@ -1,15 +1,39 @@
-import React from 'react'
-import HomePage from './pages/HomePage'
-import Loader from './UI/Loader'
+import {
+  BrowserRouter,
+  createBrowserRouter,
+  Navigate,
+  Route,
+  RouterProvider,
+  Routes,
+} from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import TipsContextProvider from "./context/TipsContextProvider";
+import AppLayout from "./UI/AppLayout";
+
+const router = createBrowserRouter([
+  {
+    element: <AppLayout />,
+    children: [
+      {
+        index: true,
+        element: <Navigate to="tips" replace />,
+      },
+      {
+        path: "/tips",
+        element: <HomePage />,
+      },
+    ],
+  },
+]);
 
 function App() {
   return (
-    <>
-
-    <HomePage />
-    </>
-
-  )
+    <TipsContextProvider>
+      <RouterProvider router={router}>
+        <AppLayout />
+      </RouterProvider>
+    </TipsContextProvider>
+  );
 }
 
-export default App
+export default App;

@@ -5,15 +5,15 @@ export function useOutsideClick(close, eventPhase = true) {
 
   useEffect(() => {
     function handleClick(e) {
-        e.preventDefault();
+      e.preventDefault();
       if (ref.current && !ref.current.contains(e.target)) {
-        close();
+        close({ type: "toggleModal" });
       }
     }
 
     document.addEventListener("click", handleClick, eventPhase);
     return () => document.removeEventListener("click", handleClick, eventPhase);
-  }, [close,eventPhase]);
+  }, [close, eventPhase]);
 
   return ref;
 }

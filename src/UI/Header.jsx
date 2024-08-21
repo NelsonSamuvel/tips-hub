@@ -1,6 +1,13 @@
+import { useTips } from "../context/TipsContextProvider";
 import Button from "./Button";
 
-function Header({ onShow }) {
+function Header() {
+  const { dispatch } = useTips();
+
+  function handleModal() {
+    dispatch({ type: "toggleModal" });
+  }
+
   return (
     <div className="px-6 sm:px-5 py-4 flex justify-between items-center gap-2">
       <div className="text-lg sm:text-xl font-semibold tracking-widest">
@@ -11,7 +18,7 @@ function Header({ onShow }) {
       </div>
       <div className="flex gap-4 items-center text-lg">
         <p className="text-base">Tips</p>
-        <Button onClick={onShow} type="primary">
+        <Button onClick={handleModal} type="primary">
           Create
         </Button>
       </div>

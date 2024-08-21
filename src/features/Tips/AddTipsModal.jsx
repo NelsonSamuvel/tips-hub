@@ -9,10 +9,10 @@ import { v4 as uuidv4 } from "uuid";
 import { generateDate } from "../../utils/helper";
 import { useTips } from "../../context/TipsContextProvider";
 
-function AddTipsModal({ onClose }) {
-  const { dispatch } = useTips();
+function AddTipsModal() {
+  const { dispatch, status } = useTips();
 
-  const ref = useOutsideClick(onClose);
+  const ref = useOutsideClick(dispatch);
 
   const {
     register,
@@ -35,8 +35,9 @@ function AddTipsModal({ onClose }) {
       postedAt,
     };
     dispatch({ type: "addNewTip", payload: newTip });
-    onClose();
   }
+
+  if (status !== "show") return null;
 
   return (
     <div className="bg-slate-300/30 absolute inset-0 z-50 backdrop-blur-sm">
@@ -44,7 +45,10 @@ function AddTipsModal({ onClose }) {
         ref={ref}
         className=" bg-gray-900 md:w-1/2 md:rounded-md mx-auto mt-16 sm:mt-4  text-stone-800 px-6 pt-4 pb-8"
       >
-        <button className="mb-4 w-full" onClick={onClose}>
+        <button
+          className="mb-4 w-full"
+          onClick={() => dispatch({ type: "toggleModal" })}
+        >
           <HiXMark className="text-slate-300 text-xl stroke-2 ml-auto" />
         </button>
         <FormRow label="Title" error={errors?.title?.message}>
